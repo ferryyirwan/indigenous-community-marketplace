@@ -83,27 +83,25 @@ Sellers can perform CRUD operations on their products:
 
 ## 📸 Screenshots
 
-Screenshots of the application will be added here to showcase the main features and user interfaces.
-
 ### 🏠 Homepage
 
-_Add screenshot here_
+<img src="public/images/screenshots/homepage.png" width="900">
 
-### 🛍️ Product Listing
+### 🛍️ Product Catalog
 
-_Add screenshot here_
+<img src="public/images/screenshots/product_catalog.png" width="900">
 
-### 📦 Product Details
+### 📦 Product Management
 
-_Add screenshot here_
+<img src="public/images/screenshots/product_manage.png" width="900">
 
-### 🛒 Buyer Dashboard / Orders
+### 🔎 Product Details
 
-_Add screenshot here_
+<img src="public/images/screenshots/product_detail.png" width="900">
 
 ### 🏪 Seller Dashboard
 
-_Add screenshot here_
+<img src="public/images/screenshots/seller_dashboard.png" width="900">
 
 ## 🛠️ Technologies
 
@@ -134,31 +132,35 @@ These entities support user management, product management, order processing and
 
 ## 📂 Project Structure
 
-    app/
-    ├── Http/
-    │   └── Controllers/
-    ├── Models/
-    └── ...
+```text
+app/
+├── Http/
+│   └── Controllers/
+├── Models/
+└── ...
 
-    database/
-    ├── migrations/
-    └── ...
+database/
+├── migrations/
+└── ...
 
-    public/
-    ├── images/
-    └── ...
+public/
+├── images/
+│   ├── products/
+│   └── screenshots/
+└── ...
 
-    resources/
-    ├── views/
-    ├── css/
-    └── js/
+resources/
+├── views/
+├── css/
+└── js/
 
-    routes/
-    └── web.php
+routes/
+└── web.php
 
-    storage/
-    vendor/
-    .env
+storage/
+vendor/
+.env
+```
 
 ## 🚀 Getting Started
 
@@ -174,43 +176,61 @@ Before running the project, make sure you have:
 
 ### 1. Clone the Repository
 
-    git clone https://github.com/ferryyirwan/indigenous-community-marketplace.git
+```bash
+git clone https://github.com/ferryyirwan/indigenous-community-marketplace.git
+```
 
 ### 2. Navigate to the Project
 
-    cd indigenous-community-marketplace
+```bash
+cd indigenous-community-marketplace
+```
 
 ### 3. Install PHP Dependencies
 
-    composer install
+```bash
+composer install
+```
 
 ### 4. Install Frontend Dependencies
 
-    npm install
+```bash
+npm install
+```
 
 ### 5. Configure Environment
 
 Create a `.env` file based on the example configuration:
 
-    cp .env.example .env
+```bash
+cp .env.example .env
+```
 
 Configure the database connection in `.env`:
 
-    DB_DATABASE=your_database_name
-    DB_USERNAME=your_username
-    DB_PASSWORD=your_password
+```env
+DB_DATABASE=your_database_name
+DB_USERNAME=your_username
+DB_PASSWORD=your_password
+```
 
 ### 6. Generate Application Key
 
-    php artisan key:generate
+```bash
+php artisan key:generate
+```
 
 ### 7. Run Database Migrations
 
-    php artisan migrate
+```bash
+php artisan migrate
+```
 
 ### 8. Start the Development Server
 
-    php artisan serve
+```bash
+php artisan serve
+```
 
 The application can then be accessed through the Laravel development server.
 
